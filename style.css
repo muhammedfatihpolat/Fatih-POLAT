@@ -1,4 +1,15 @@
+@font-face{
+    font-family: fontt;
+    src: url(./fonts/Lugrasimo-Regular.ttf);
+}
+
+.button,a,p {
+    font-family: fontt;
+}
+
+
 body{
+    font-family: fontt;
     
     background-color: #f2c6bd;
 }
@@ -9,28 +20,75 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    padding-top: 35px;
+    align-items: center;
 }
 
 
 .left{
-    background-color: green;
     display: flex;
+    align-items: center;
 }
+.company-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 15px;
+}
+.logo-img{
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid #f2e7e1;
+    box-shadow: 0px 0px 5px rgb(19, 19, 19,0,2) ;
 
+}
+.company-info > h2,p{
+    font-size: 18px;
+    margin: 0;
+}
+    
 .right{
-    background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.action-button{
+.button {
     background-color: #121692;
     border: none;
     color: white;
+    border: none;
+  
     /*padding:top right bpttom left*/
     padding: 10px 15px 10px 15px;
+    border-radius: 3px;
 }
 
 .menu>a{
     color: black;
     text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
 }
+ .main-right > img {
+    height: 50vh;
+ }
 
+ .main-section {
+    display: flex;
+ }
+
+.main-left > h2 {
+    font-size: 64px;
+}
+ .Yapma {
+    color: #3141c8;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px  10px 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 2px solid #f2e7e1;
+    box-shadow: 0px 0px 3px rgb(19, 19, 19, 0,3);
+ }
